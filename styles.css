@@ -3,6 +3,7 @@ body {
             margin: 0;
             padding: 8px;
             font-family: 'Sohne', sans-serif;
+            background-color: #ffffff;
         }
 
 :root {
@@ -24,10 +25,19 @@ body {
         font-style: normal;
 }
 
+p {
+color: black;
+}
+
+h1 {
+    color: black;
+    }
+
 h2 span {
     text-align: center;
     font-size: 15px ;
     font-family: 'Sohne';
+    color: black;
     height: 400px;
     width: 0px;
     position: absolute;
@@ -68,6 +78,16 @@ h2 span {
     transform: rotate(60deg);
     }
 
+    .revealed {
+
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(
+            circle 160px at 50% 50%, rgba(0,0,0,0.98) 10px);
+        pointer-events: none;
+        display: block;
+
+    }
         .container {
             width: 100%;
             max-width: 600px;
@@ -122,10 +142,15 @@ h2 span {
         #BlackSphere.wave {
             scale: 50;
         }
+
+        .revealed.display {
+            display: block;
+        }
+        
         
         /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
-            .container.container2.blacksphere {
+            .container.container2.blacksphere.revealed {
                 flex-direction: column;
                 width: 10%;
             }
