@@ -1,7 +1,7 @@
 
 body {
             margin: 0;
-            padding: 0;
+            padding: 8px;
             font-family: 'Sohne', sans-serif;
         }
 
@@ -74,13 +74,12 @@ h2 span {
 
             margin: 0 auto; /* This centers the container horizontally */
             text-align: center; /* This centers the text inside the container */
-            padding: -10px;
+            padding: 1px;
             z-index: 0;
         }
 
 
         .container2 {
-            width: 100%;
             max-width: 600px;
             margin: 0 auto; /* This centers the container horizontally */
             text-align: center; /* This centers the text inside the container */
