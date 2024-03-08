@@ -80,7 +80,7 @@ h2 span {
 
 
         .container2 {
-            width: 55%;
+            width: 100%;
             max-width: 600px;
             margin: 0 auto; /* This centers the container horizontally */
             text-align: center; /* This centers the text inside the container */
