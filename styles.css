@@ -69,7 +69,7 @@ h2 span {
     }
 
         .container {
-            width: 95%;
+            width: 100%;
             max-width: 600px;
 
             margin: 0 auto; /* This centers the container horizontally */
