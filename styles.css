@@ -24,9 +24,54 @@ body {
         font-style: normal;
 }
 
+h2 span {
+    text-align: center;
+    font-size: 15px ;
+    font-family: 'Sohne';
+    height: 400px;
+    width: 0px;
+    position: absolute;
+    margin: 0 auto;
+    }
+    .c1 {
+    transform: rotate(6deg);
+    }
+    .c2 {
+    transform: rotate(12deg);
+    }
+    .c3 {
+    transform: rotate(18deg);
+    }
+    .c4 {
+    transform: rotate(24deg);
+    }
+    .c5 {
+    transform: rotate(30deg);
+    }
+    .c6 {
+    transform: rotate(36deg);
+
+    }
+    .c7 {
+    transform: rotate(43deg);
+
+    }
+    .c8 {
+    transform: rotate(48deg);
+
+    }
+    .c9 {
+    transform: rotate(54deg);
+
+    }
+    .c10 {
+    transform: rotate(60deg);
+    }
+
         .container {
-            width: 42%;
+            width: 95%;
             max-width: 600px;
+
             margin: 0 auto; /* This centers the container horizontally */
             text-align: center; /* This centers the text inside the container */
             padding: -10px;
@@ -35,7 +80,7 @@ body {
 
 
         .container2 {
-            width: 42%;
+            width: 55%;
             max-width: 600px;
             margin: 0 auto; /* This centers the container horizontally */
             text-align: center; /* This centers the text inside the container */
@@ -83,6 +128,7 @@ body {
         @media screen and (max-width: 768px) {
             .container.container2.blacksphere {
                 flex-direction: column;
+                width: 10%;
             }
         }
         .clickable-image {
