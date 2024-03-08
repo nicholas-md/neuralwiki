@@ -45,7 +45,7 @@ window.addEventListener("DOMContentLoaded", () => {
     window.innerWidth / 2
   }px ${window.innerHeight / 2}px, ${revealedSize}`;
   window.addEventListener("mousemove", (e) => updateRevealed(e));
-
+  window.addEventListener("touchmove", (e) => updateRevealed(e));
   function updateRevealed(e) {
     revealed.style.backgroundImage = `radial-gradient(circle at ${
       (e.pageX / window.innerWidth) * 100
