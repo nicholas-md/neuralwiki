@@ -15,8 +15,16 @@ function toggleColor() {
 clickableImage.addEventListener('mousedown', () => {
    clickableLink.classList.add('clicking');
    setTimeout(() => {
-        window.open("https://linktr.ee/neuralape", "_blank");
-   }, 1000); // Set the duration (in milliseconds) for the click to be held down
+   // Detect if the browser is Safari or iOS
+   const isSafariOrIOS = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+   // If it's Safari or iOS, use window.location to navigate
+   if (isSafariOrIOS) {
+       window.location = "https://linktr.ee/neuralape";
+   } else { // Otherwise, open link in a new tab
+       window.open("https://linktr.ee/neuralape", "_blank");
+   }
+}, 1000); // Set the duration (in milliseconds) for the click to be held down
 });
 
 clickableImage.addEventListener('mouseup', () => {
@@ -29,4 +37,6 @@ clickableImage.addEventListener('mousedown', () => {
     
     // Call the toggleColor function to change the color of elements with class 'one'
     toggleColor();
+
 });
+
