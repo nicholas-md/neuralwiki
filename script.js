@@ -12,9 +12,10 @@ function toggleColor() {
 clickableImage.addEventListener('mousedown', () => {
    clickableLink.classList.add('clicking');
    setTimeout(() => {
-   const isSafariOrIOS = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isSafariOrIOS = /^((?!chrome|android|instagram).)*safari/i.test(navigator.userAgent);
+    const isInstagramBrowser = /instagram/i.test(navigator.userAgent);
 
-   if (isSafariOrIOS) {
+        if (isSafariOrIOS || isInstagramBrowser) {
        window.location = "https://linktr.ee/neuralape";
    } else {
        window.open("https://linktr.ee/neuralape", "_blank");
