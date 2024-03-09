@@ -72,21 +72,18 @@ h2 span {
             width: 100%;
             max-width: 600px;
 
-            margin: 0 auto; /* This centers the container horizontally */
-            text-align: center; /* This centers the text inside the container */
+            margin: 0 auto; 
+            text-align: center; 
             padding: 1px;
             z-index: 0;
         }
-                p {
-                transition: color .1s ease-in;
-                }
-
-
-
+        p {
+            transition: color .1s ease-in;
+        }
         .container2 {
             max-width: 600px;
-            margin: 0 auto; /* This centers the container horizontally */
-            text-align: center; /* This centers the text inside the container */
+            margin: 0 auto; 
+            text-align: center;
             padding: 0px;
             z-index: 2;
             animation: pulse 3.5s infinite;
@@ -122,12 +119,9 @@ h2 span {
             transition: all 0.6s ease-in;
             
         }
-
         #BlackSphere.wave {
             scale: 70;
         }
-        
-        /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
             .container.container2.blacksphere {
                 flex-direction: column;
@@ -144,23 +138,15 @@ h2 span {
             font-family: 'FixedSys';
             font-size: var(--header-size, 3em);
         }
-
-
         .one {
-
         color: black         
-    
     }
-        
        .white-text {
-
         color: white         
-    
     }
-
         .external-link {
             cursor: pointer;
-        }
+    }
 
 
 
