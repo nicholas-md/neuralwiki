@@ -18,7 +18,6 @@ clickableImage.addEventListener('mousedown', () => {
    // Detect if the browser is Safari or iOS
    const isSafariOrIOS = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-   // If it's Safari or iOS, use window.location to navigate
    if (isSafariOrIOS) {
        window.location = "https://linktr.ee/neuralape";
    } else { // Otherwise, open link in a new tab
