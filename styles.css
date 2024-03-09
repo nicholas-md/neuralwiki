@@ -3,7 +3,6 @@ body {
             margin: 0;
             padding: 8px;
             font-family: 'Sohne', sans-serif;
-            background-color: #ffffff;
         }
 
 :root {
@@ -25,19 +24,10 @@ body {
         font-style: normal;
 }
 
-p {
-color: black;
-}
-
-h1 {
-    color: black;
-    }
-
 h2 span {
     text-align: center;
     font-size: 15px ;
     font-family: 'Sohne';
-    color: black;
     height: 400px;
     width: 0px;
     position: absolute;
@@ -78,16 +68,6 @@ h2 span {
     transform: rotate(60deg);
     }
 
-    .revealed {
-
-        position: fixed;
-        inset: 0;
-        background: radial-gradient(
-            circle 160px at 50% 50%, rgba(0,0,0,0.98) 10px);
-        pointer-events: none;
-        display: block;
-
-    }
         .container {
             width: 100%;
             max-width: 600px;
@@ -97,6 +77,10 @@ h2 span {
             padding: 1px;
             z-index: 0;
         }
+                p {
+                transition: color .1s ease-in;
+                }
+
 
 
         .container2 {
@@ -130,7 +114,7 @@ h2 span {
             border-radius: 100%;
             width: 50px;
             height: 50px;
-            z-index: -2;
+            z-index: -4;
             padding: 0%;
             display: block;
             overflow: hidden;
@@ -140,17 +124,12 @@ h2 span {
         }
 
         #BlackSphere.wave {
-            scale: 50;
+            scale: 70;
         }
-
-        .revealed.display {
-            display: block;
-        }
-        
         
         /* Media query for smaller screens */
         @media screen and (max-width: 768px) {
-            .container.container2.blacksphere.revealed {
+            .container.container2.blacksphere {
                 flex-direction: column;
                 width: 10%;
             }
@@ -165,6 +144,20 @@ h2 span {
             font-family: 'FixedSys';
             font-size: var(--header-size, 3em);
         }
+
+
+        .one {
+
+        color: black         
+    
+    }
+        
+       .white-text {
+
+        color: white         
+    
+    }
+
         .external-link {
             cursor: pointer;
         }
